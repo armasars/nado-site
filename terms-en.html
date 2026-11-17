@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>NADO — Terms of Use</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<style>
+:root{
+  --bg:#FAFCFC;
+  --panel:#FFFFFF;
+  --ink:#10292A;
+  --muted:#5B7172;
+  --line:#E3EDEC;
+  --accent:#00BBC8;
+  --accent-ink:#00343A;
+  --font-display:'Space Grotesk',system-ui,sans-serif;
+  --font-body:'Inter',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0B1617; --panel:#101F20; --ink:#EAF6F6; --muted:#8FA9AA; --line:#1C3233; --accent:#2BD9E6; --accent-ink:#DFFBFC;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0B1617; --panel:#101F20; --ink:#EAF6F6; --muted:#8FA9AA; --line:#1C3233; --accent:#2BD9E6; --accent-ink:#DFFBFC;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);
+  padding-left:max(16px, env(safe-area-inset-left,0px));
+  padding-right:max(16px, env(safe-area-inset-right,0px));
+}
+h1,h2{font-family:var(--font-display);text-wrap:balance;margin:0}
+p{margin:0;line-height:1.7}
+.wrap{max-width:760px;margin:0 auto}
+header.top{
+  position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);
+  border-bottom:1px solid var(--line);padding-block:14px;
+}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo-img{height:28px;width:auto;display:block}
+.back{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
+.back:hover{color:var(--accent-ink)}
+.langs{display:flex;gap:10px;align-items:center}
+.langs a{color:var(--muted);text-decoration:none;font-size:13px;font-weight:600}
+.langs a.active{color:var(--accent-ink)}
+main{padding-block:48px}
+.doc-title{font-size:28px;font-weight:700;margin-bottom:6px}
+.doc-sub{color:var(--muted);font-size:13.5px;margin-bottom:28px}
+section.doc-section{margin-bottom:26px}
+section.doc-section h2{font-size:16px;font-weight:600;margin-bottom:8px}
+section.doc-section p{font-size:14.5px;color:var(--muted)}
+section.doc-section p + p{margin-top:8px}
+section.doc-section a{color:var(--accent-ink)}
+footer{border-top:1px solid var(--line);padding-block:28px;padding-bottom:max(28px, env(safe-area-inset-bottom,0px))}
+footer .legal{font-size:12px;color:var(--muted);line-height:1.8}
+footer .legal b{color:var(--ink);font-weight:600}
+footer a{color:var(--accent-ink)}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+      <img class="logo-img" alt="NADO" src="data:image/png;base64,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">
+      <strong style="font-family:var(--font-display);font-size:15px">NADO</strong>
+    </a>
+    <div class="langs">
+      <a href="terms.html">RU</a>
+      <a href="terms-en.html" class="active">EN</a>
+      <a href="terms-ko.html">KO</a>
+      <span style="color:var(--line)">|</span>
+      <a class="back" href="index.html">← Back to home</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1 class="doc-title">Terms of Use</h1>
+  <p class="doc-sub">Revision 1 · effective November 13, 2026</p>
+
+  <section class="doc-section">
+    <h2>1. About the service</h2>
+    <p>NADO (나도) is an app and website that let users post service listings and find specialists nearby. The App's Holder is KUZMINA ALEXANDRA, business registration No. 323-40-01456, address: 11-7 Sambong-ro 19beon-gil, Manan-gu, Anyang-si, Gyeonggi-do, Republic of Korea.</p>
+  </section>
+
+  <section class="doc-section">
+    <h2>2. Registration and account</h2>
+    <p>Using the core functionality requires creating an account. The User agrees to provide accurate information and is responsible for keeping access to their account secure.</p>
+  </section>
+
+  <section class="doc-section">
+    <h2>3. The Holder's role regarding listings</h2>
+    <p>The Holder provides a technical platform for posting and finding listings and is not a party to transactions between users. The user who posted a listing is responsible for the accuracy of its content.</p>
+    <p>The Holder responds to complaints about inaccurate or impermissible listings within a reasonable time, up to and including removing the listing and blocking the violator's account.</p>
+  </section>
+
+  <section class="doc-section">
+    <h2>4. Rules of conduct</h2>
+    <p>It is prohibited to post unlawful, offensive, or misleading content, to impersonate another person, or to use the App in any way that violates the rights of third parties or the laws of the Republic of Korea.</p>
+  </section>
+
+  <section class="doc-section">
+    <h2>5. Intellectual property</h2>
+    <p>The name, logo, and design elements of the App belong to the Holder. The User retains rights to the content they post and grants the Holder the right to display it as part of the service's operation.</p>
+  </section>
+
+  <section class="doc-section">
+    <h2>6. Limitation of liability</h2>
+    <p>The App is provided “as is.” The Holder does not guarantee uninterrupted operation of the service and is not liable for damage arising from interactions between users that are beyond the Holder's control.</p>
+  </section>
+
+  <section class="doc-section">
+    <h2>7. Changes to these Terms</h2>
+    <p>The Holder may update these Terms; the current version is always available on this page, with its effective date indicated.</p>
+  </section>
+
+  <section class="doc-section">
+    <h2>8. Governing law and contact</h2>
+    <p>These Terms are governed by the laws of the Republic of Korea. For questions related to the App, contact: <a href="mailto:office@nado-info.com">office@nado-info.com</a> · +82 10-2379-9713.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="legal">
+      <b>KUZMINA ALEXANDRA</b> (나도 / NADO)<br>
+      Business registration No. 323-40-01456 &nbsp;·&nbsp; Mail-order business report No. 2026-안양만안-0699호<br>
+      11-7 Sambong-ro 19beon-gil, Manan-gu, Anyang-si, Gyeonggi-do, Republic of Korea<br>
+      Email: office@nado-info.com &nbsp;·&nbsp; Phone: +82 10-2379-9713
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
